@@ -1,3 +1,107 @@
+/*
+ * This is a CSS rule.  It uses a tag selector to select all <body> elements.
+ */
+body {
+  margin: 50px;
+}
+
+/*
+ * This rule uses a tag selector to select all <p> elements.
+ */
 p {
+  color: red;
+}
+
+/*
+ * This rule uses a combinator to select only <p> elements that also have
+ * the class "first-p".  Note that because this rule has a selector with higher
+ * specificity than the <p> selector above (selectors with a class have higher
+ * specificity than selectors with only tags), the properties here will take
+ * precedence over ones in the above rule in cases where both rules match the
+ * same element.
+ */
+p.first-p {
+  color: orange;
+}
+
+/*
+ * This rule uses a tag selector to select all <em> elements.
+ */
+em {
+  color: blue;
+}
+
+/*
+ * This rule uses a class selector to select all elements (regardless of tag)
+ * that have the class "first-p".
+ */
+.first-p {
+  background-color: green;
+}
+
+/*
+ * This rule uses a class selector to select all elements (regardless of tag)
+ * that have the class "very-first-p".
+ */
+.very-first-p {
+  font-size: 50px;
+}
+
+/*
+ * This rule uses an ID selector to select all elements with id "opening-div".
+ * Typically, an ID will apply to only one element.
+ */
+#opening-div {
+  border: solid 5px orange;
+}
+
+/*
+ * This rule uses a combinator to select all <em> elements that are descendants
+ * (at any level) of a <strong> element.
+ */
+strong em {
+  text-decoration: underline;
+}
+
+/*
+ * This rule uses a combinator to select all elements with class "first-p" that
+ * are descendants (at any level) of an <em> element.
+ */
+em .first-p {
+  background-color: yellow;
+}
+
+/*
+ * This rule uses a combinator to slect all <strong> elements that also have
+ * class "first-p".
+ */
+strong.first-p {
+  font-size: 30px;
+}
+
+/*
+ * This rule has two selectors, separated by a comma, and applies to elements
+ * that match either selector.  The first selector uses a combinator to match
+ * all <em> elements that are direct children of a <div> element.  The second
+ * selector matches any element that has class "very-first-p".
+ */
+div > em,
+.very-first-p {
+  color: black;
+}
+
+/*
+ * This rule uses a combinator to select any <li> element that is the very
+ * next sibling after an element with id "elem-3".
+ */
+#elem-3 + li {
+  border: solid 3px purple;
+}
+
+/*
+ * This rule uses a combinator to select any <li> element that is *any* sibling
+ * of an element with id "elem-3".
+ */
+#elem-3 ~ li {
   color: red;
 }
