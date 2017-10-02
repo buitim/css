@@ -1,0 +1,26 @@
+/*
+ * Here, we're using the various CSS box properties to affect the space within
+ * and around the elements on the page.
+ */
+.outer-box {
+  width: 300px;
+  height: 200px;
+  padding: 20px;*/
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.inner-box {
+  /*max-width: 150px;*/
+  margin: 10px 40px;
+  padding: 5px 20px 0 100px;
+  border-left: 1px solid gray;
+  display: inline;
+}
+
+em {
+  display: block;
+}
