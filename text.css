@@ -6,3 +6,38 @@ body {
   /*font-family: fantasy;*/
   font-family: 'Arimo', sans-serif;
 }
+
+.orangish {
+  /*color: rgb(255, 128, 0);*/
+  color: #fca31d;
+  /*color: rgba(255, 128, 0, 0.5);*/
+}
+
+.larger {
+  font-size: 24px;
+  /*font-size: 2em;*/
+  /*font-size: 28pt;*/
+  /*font-size: 25vw;*/
+  /*font-size: 25vh;*/
+}
+
+.bold {
+  font-weight: bold;
+  /*font-weight: 900;*/
+}
+
+.italic {
+  font-style: italic;
+}
+
+.lots-of-things {
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-shadow: 25px 5px 5px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+}
