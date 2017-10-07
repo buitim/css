@@ -1,0 +1,24 @@
+.with-hover:hover {
+  background-color: #a5e697;
+}
+
+a:focus, a:hover {
+  background-color: #edbe62;
+}
+
+a::after {
+  content: "↗";
+}
+
+li:first-child {
+  color: blue;
+}
+
+li:last-child {
+  color: yellow;
+}
+
+p::first-letter {
+  font-size: 24px;
+  font-family: cursive;
+}
