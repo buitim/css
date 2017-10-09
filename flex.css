@@ -1,0 +1,28 @@
+.container {
+  min-height: 400px;
+  margin: 5px;
+  padding: 10px;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 50px;
+  /*justify-content: space-between;*/
+  align-items: center;
+}
+
+.box {
+  /*flex-grow: 1;*/
+  /*flex-basis: 20%;*/
+  flex: 1 200px;
+  /*min-width: 200px;*/
+  height: 200px;
+  margin: 10px 0;
+  background-color: green;
+  border: 2px solid black;
+}
+
+.bigger {
+  flex-grow: 3;
+  /*min-width: 50%;*/
+}
