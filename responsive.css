@@ -1,0 +1,31 @@
+div {
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+.responsive {
+  background-color: green;
+}
+
+.non-responsive {
+  background-color: blue;
+}
+
+@media(max-width: 1200px) {
+  .responsive {
+    background-color: gray;
+  }
+}
+
+@media(max-width: 800px) {
+  .responsive {
+    background-color: yellow;
+  }
+}
+
+@media(max-width: 400px) {
+  .responsive {
+    background-color: orange;
+  }
+}
